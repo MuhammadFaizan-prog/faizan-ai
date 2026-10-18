@@ -11,3 +11,9 @@ fetch(`https://github-contributions-api.jogruber.de/v4/${U}?y=last`).then(r=>r.j
 fetch(`https://api.github.com/users/${U}`).then(r=>r.json()).then(u=>{if(u.public_repos!=null){document.getElementById('gh-repos').textContent=u.public_repos;document.getElementById('gh-followers').textContent=u.followers}}).catch(()=>{});
 const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.play().catch(()=>{})}else v.pause()}),{threshold:.35});
 document.querySelectorAll('.media video').forEach(v=>vo.observe(v));
+
+(()=>{const k='fz-visit',base='https://abacus.jasoncameron.dev';let seen=null;try{seen=sessionStorage.getItem(k)}catch(e){}
+const ord=n=>{const s=['th','st','nd','rd'],v=n%100;return n.toLocaleString('en-US')+(s[(v-20)%10]||s[v]||s[0])};
+const show=n=>{if(!n||n<1)return;document.getElementById('vnum').textContent=ord(n);document.getElementById('visitor').hidden=false};
+if(seen){show(+seen);return}
+fetch(`${base}/hit/faizi-dev/visits`).then(r=>r.json()).then(d=>{try{sessionStorage.setItem(k,d.value)}catch(e){}show(d.value)}).catch(()=>{});})();
