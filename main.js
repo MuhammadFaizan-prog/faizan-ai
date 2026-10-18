@@ -2,7 +2,9 @@ const U='MuhammadFaizan-prog';
 document.getElementById('theme').onclick=()=>{const r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('theme',r.dataset.theme)}catch(e){}};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.06});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-fetch(`https://github-contributions-api.jogruber.de/v4/${U}?y=${new Date().getFullYear()}`).then(r=>r.json()).then(d=>{
+const Y=new Date().getFullYear();
+fetch(`/api/contributions?y=${Y}`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>({total:{[Y]:d.total},contributions:d.contributions}))
+.catch(()=>fetch(`https://github-contributions-api.jogruber.de/v4/${U}?y=${Y}`).then(r=>r.json())).then(d=>{
   document.getElementById('gh-contrib').textContent=`${Object.values(d.total)[0]} in ${new Date().getFullYear()}`;
   const cal=document.getElementById('cal');const first=new Date(d.contributions[0].date).getDay();
   for(let i=0;i<first;i++)cal.appendChild(Object.assign(document.createElement('i'),{style:'visibility:hidden'}));
