@@ -6,7 +6,7 @@
 
 ### The personal site of **Muhammad Faizan**: Agentic AI & Full-Stack Engineer, Lahore 🇵🇰
 
-[![Live site](https://img.shields.io/badge/Live-faizan--ai--psi.vercel.app-0a7c54?style=for-the-badge&logo=vercel&logoColor=white)](https://faizan-ai-psi.vercel.app)
+[![Live site](https://img.shields.io/badge/Live-faizi--dev.vercel.app-0a7c54?style=for-the-badge&logo=vercel&logoColor=white)](https://faizi-dev.vercel.app)
 [![Talk to my AI agent](https://img.shields.io/badge/Talk_to_my-AI_agent-151515?style=for-the-badge&logo=openai&logoColor=47b990)](https://qualzo.app/chat/cmt01ewgm00wgjqtgc8agi1cq)
 [![Driving test demo](https://img.shields.io/badge/Watch-Driving_Test_Demo-151515?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://www.youtube.com/watch?v=yJV395NlWko)
 
