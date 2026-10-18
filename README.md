@@ -29,7 +29,7 @@
 | 🧭 **Where I have been** | Munexa Design → Dexterz Technologies → Prodigy InfoTech → Aptech, plus BSCS at University of Education |
 | 🧰 **What I reach for** | AI & agentic AI, frontend & mobile, backend & data, infra & testing |
 | 📈 **GitHub, live** | Repo count, a contribution heatmap and featured repos, fetched on every page load |
-| 💬 **Say hi** | Email, LinkedIn and Upwork |
+| 💬 **Say hi** | Email and LinkedIn |
 
 ## 🎨 Design
 
@@ -68,7 +68,6 @@ I'm open to **Full Stack** and **Agentic AI** roles (remote, hybrid or on-site i
 
 [![Email](https://img.shields.io/badge/Email-muhammadfaizanali18%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:muhammadfaizanali18@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Faizan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-faizan-60518a290/)
-[![Upwork](https://img.shields.io/badge/Upwork-Hire_me-6FDA44?style=flat-square&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01ceaba9e7052a9c9a)
 [![GitHub](https://img.shields.io/badge/GitHub-MuhammadFaizan--prog-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/MuhammadFaizan-prog)
 
 <sub>Built by hand in Lahore · © 2026 Muhammad Faizan</sub>
