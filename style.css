@@ -107,3 +107,6 @@ footer{border-top:1px solid var(--border)}
 .modal-body video,.modal-body img,.modal-body iframe{display:block;width:100%;border-radius:8px;border:1px solid var(--border);background:#000}
 .modal-body iframe{aspect-ratio:16/9;height:auto;border:0}
 body.locked{overflow:hidden}
+button.row-link{background:none;border:0;padding:0;margin:0;cursor:pointer;font-family:var(--mono);font-size:11px;color:var(--subtle);box-shadow:none;border-radius:0;transition:color .2s}
+button.row-link:hover{color:var(--fg);background:none}
+.row .sublinks{margin-top:12px}
