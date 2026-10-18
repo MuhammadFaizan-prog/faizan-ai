@@ -1,6 +1,7 @@
 import { getCalendar, yearOf } from "./_calendar.js";
 const THEMES = {
   light: { bg: "#ffffff", fg: "#08090a", sub: "#6b6f76", border: "#e7e7e8", cells: ["#ebedf0", "#a7dcc6", "#5fbf97", "#2a9b6e", "#0a7c54"] },
+  readme: { bg: "#151515", fg: "#ffffff", sub: "#8b949e", border: "#2a2a2a", cells: ["#232323", "#4a1d57", "#7a2590", "#a529c0", "#d36be8"] },
   dark: { bg: "#0d1117", fg: "#f2f3f4", sub: "#8a8e96", border: "#30363d", cells: ["#161b22", "#1a4534", "#26725a", "#36a07c", "#47b990"] },
 };
 export default async function handler(req, res) {
