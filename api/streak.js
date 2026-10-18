@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     const years = [];
     for (let y = START; y <= now; y++) years.push(y);
     const cals = await Promise.all(years.map(getCalendar));
-    const today = new Date().toISOString().slice(0, 10);
+    const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Karachi" });
     const days = cals.flatMap(c => c.contributions).filter(d => d.date <= today).sort((a, b) => a.date < b.date ? -1 : 1);
     const total = cals.reduce((s, c) => s + c.total, 0);
     const first = days.find(d => d.count > 0);
