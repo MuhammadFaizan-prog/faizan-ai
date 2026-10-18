@@ -9,3 +9,5 @@ fetch(`https://github-contributions-api.jogruber.de/v4/${U}?y=last`).then(r=>r.j
   d.contributions.forEach(c=>{const i=document.createElement('i');i.dataset.l=c.level;i.title=`${c.count} on ${c.date}`;cal.appendChild(i)});
 }).catch(()=>{document.getElementById('gh-contrib').textContent=''});
 fetch(`https://api.github.com/users/${U}`).then(r=>r.json()).then(u=>{if(u.public_repos!=null){document.getElementById('gh-repos').textContent=u.public_repos;document.getElementById('gh-followers').textContent=u.followers}}).catch(()=>{});
+const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.play().catch(()=>{})}else v.pause()}),{threshold:.35});
+document.querySelectorAll('.media video').forEach(v=>vo.observe(v));
