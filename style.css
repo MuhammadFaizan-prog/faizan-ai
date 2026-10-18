@@ -85,3 +85,7 @@ footer{border-top:1px solid var(--border)}
 .foot .hand{font-size:16px;color:var(--subtle)}
 .reveal{opacity:0;transform:translateY(10px);transition:opacity .6s cubic-bezier(.23,1,.32,1),transform .6s cubic-bezier(.23,1,.32,1)}.reveal.in{opacity:1;transform:none}
 @media(max-width:640px){.hero-name{font-size:3.5rem}.nav-links .sm{display:none}.job{flex-direction:column;gap:4px}.job .when{width:auto}.gh{gap:28px}}
+.media{margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid var(--border);background:var(--surface);aspect-ratio:16/9}
+.media video,.media img{display:block;width:100%;height:100%;object-fit:cover}
+.sublinks{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:11px!important}
+.sublinks a{color:var(--subtle);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}.sublinks a:hover{color:var(--fg)}
